@@ -1,0 +1,119 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.jumpTo{
+  height:0px;
+  width:0px;
+  font-size:0px;
+  margin:0px;
+  padding: 0px;
+
+}
+
+.top-bar {
+    background-color: #2E37AD;
+    height: 100px;
+    width:100%;
+    color:#FFFFFF;
+}
+
+.logo{
+    width:100px;
+    height:100px;
+    margin-left:30px;
+}
+
+.account-button{
+    background-color:#2E37AD;
+    border: none;
+    float:right;
+    margin-top:-150px;
+    margin-right:100px;
+    font-size:30px;
+}
+
+ul.navbar-nav{
+    list-style:none;
+    position:relative;
+    float:left;
+    color: #FFFFFF;
+    margin-left:110px;
+    margin-top:-70px;
+}
+
+li.nav-item{
+    margin-left:10px;
+    margin-right:10px;
+    font-size:18pt;
+    color:white;
+}
+
+.nav-link{
+  color:white;
+  text-decoration:underline;
+}
+
+.nav-link:hover{
+  color:#EEE
+}
+
+.dropdown-menu{
+    position:absolute;
+    left:85vw;
+    top:-100px
+}
+
+.content {
+    width:100%;
+    padding: 0px;
+}
+
+.container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.top-content{
+    min-height: 100px;
+    background-color: #2E37AD;
+    margin-top:5px;
+    margin-bottom:5px;
+
+}
+
+.leftColumn{
+    background-color: #2E37AD;
+    height:0px;
+    display:none;
+}
+
+.centerColumn{
+    background-color: #FFF;
+    min-height:100vh;
+}
+
+.rightColumn{
+    background-color: #2E37AD;
+    height:0px;
+    display:none;
+}
+
+footer {
+    background-color: #2E37AD;
+    text-align:center;
+    color:white;
+}
+
+.active{
+  color:#FFFFFF;
+  font-weight:bold;
+}

@@ -1,0 +1,52 @@
+#pageContent{
+    position:relative;
+    float:left;
+    width:420px;
+}
+
+#imgContent{
+  position:relative;
+  float: right;
+  width:430px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1.productName{
+  font-size:50pt;
+  text-decoration: underline;
+  font-weight:bold;
+}
+
+p.this{
+  font-size:16pt;
+  font-style:italic;
+  font-family: sans-serif;
+}
+
+img.productImg{
+  width:320px;
+  height:320px;
+  float:left;
+}
+
+img.thumbnail{
+    width:75px;
+    height:75px;
+    float: right;
+    margin:2px;
+}
+
+ul.thumbnailList{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  float:right;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+li.imgItem{
+}

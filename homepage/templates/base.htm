@@ -1,0 +1,94 @@
+## this is the skeleton of all pages on in this app - it defines the basic html tags
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <head>
+
+        ## add any site-wide scripts or CSS here; for example, jquery:
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        ## bootstrap javascript
+        <script src="${ STATIC_URL }homepage/media/bootstrap/js/bootstrap.min.js"></script>
+
+        ## bootstrap css styles
+        <link rel="stylesheet" type="text/css" href="${ STATIC_URL }homepage/media/bootstrap/css/bootstrap.min.css">
+
+        ##favicon
+        <link rel="icon" href = "${ STATIC_URL }homepage/media/img/fomo.jpg">
+
+        ## render the static file links with the same name as this template
+        <script src="/django_mako_plus/dmp-common.min.js"></script>
+        ${ django_mako_plus.links(self) }
+
+        <title>FOMO Instruments</title>
+
+    </head>
+    <body>
+
+
+        ## Navigation Bar
+        <%block name = "top_bar">
+
+          <header class = 'top-bar'>
+            <a href = "#content" class = "jumpTo">Jump to Main Content</a>
+              <a href = '/index/'><img src="${ STATIC_URL }homepage/media/img/fomo.jpg" alt="Fomo Logo" class = "logo"></a>
+             <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                  <%block name = "menu">
+                  </%block>
+              </nav>
+              <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle account-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Account
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">My Account</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li role="separator" class="divider"></li>
+                    <li><a href="/account/login/">Log In</a></li>
+                    <li><a href="/account/logout/">Log Out</a></li>
+                    <li><a href="/account/signup/">Sign Up</a></li>
+                </ul>
+              </div>
+          </header>
+        </%block>
+
+
+        ## Body and content area
+        <body class = "content">
+            <div class = "container">
+
+                ## Top content area
+                <%block name = "top_content">
+                    <div class = "row top-content">
+                    </div>
+                </%block>
+
+                <div class = "row">
+
+                    ## Center column area
+                    <%block name = "center_column">
+                        <div class = "col-xs-12 centerColumn">
+                            <%block name = "content">
+                            </%block>
+                        </div>
+                    </%block>
+
+                    ## Right column area
+                </div>
+            </div>
+          </body>
+
+
+   ## Footer area
+   <%block name = "foot">
+     <footer>
+          <%block name="body_footer">
+             <%! from datetime import datetime %>
+              &copy Copyright ${ datetime.now().year }. All rights reserved.
+          </%block>
+      </footer>
+    </%block>
+
+  </body>
+</html>

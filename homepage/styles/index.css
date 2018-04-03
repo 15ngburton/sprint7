@@ -1,0 +1,91 @@
+h4.utc-time {
+    color: #AA3333;
+}
+
+.server-time {
+    font-size: 2em;
+    color: red;
+}
+
+div.top-content{
+    background-color:#FFF;
+    height:700px;
+    text-align: center;
+}
+
+img.hero{
+  width:66%;
+  height:auto;
+  margin: auto;
+}
+
+h1.hero-heading{
+  font-size: 70px;
+  font-weight:bold;
+  margin-top:100px;
+  margin-left:80px;
+  text-decoration: none;
+  color: black;
+}
+
+h1.hero-heading:hover{
+  text-decoration:none;
+}
+
+button.hero-btn{
+  width:125px;
+  height:67px;
+  font-size:16pt;
+  background-color:#3F48CC;
+  color: #FFF;
+  font-weight:bold;
+  margin-left:80px
+}
+
+button.hero-btn:hover{
+  color:white;
+}
+
+a:hover{
+  text-decoration:none;
+}
+
+h2.bizName{
+  font-size:30pt;
+  color:black;
+  text-align:center;
+  font-weight:bold;
+}
+
+div.oDiv{
+  height:100%;
+  background-color:#EEE;
+}
+
+div.homepageDiv{
+  background-color:#EEE;
+  padding-top:30px;
+  padding-bottom:30px;
+  margin: auto;
+  padding-right:;
+  padding-left:;
+}
+
+p{
+  font-size:14pt;
+}
+
+div.btnDiv{
+  width:100%;
+  margin: 0;
+  text-align: center;
+}
+
+button.product_btn{
+  width:auto;
+  height: auto;
+  background-color:#3F48CC;
+  color: #FFFFFF;
+  font-size:16pt;
+  margin: 0 auto;
+}

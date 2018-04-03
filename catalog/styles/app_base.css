@@ -1,0 +1,36 @@
+.cat_list{
+  list-style: none;
+  font-size: 16pt;
+  font-family: sans-serif;
+  color: black;
+}
+
+.cat_list:hover{
+  color: darkBlue;
+}
+
+.selected_link{
+  background-color:#CCC;
+}
+
+.hidden_tag{
+  display:none;
+}
+
+ol.recentViewList{
+  list-style:None;
+  display:flex;
+  flex-direction:column;
+}
+
+li.recentItem{
+  font-size:16px;
+  font-style: none;
+  text-align:center;
+}
+
+img.viewedImg{
+  width:100px;
+  height:auto;
+  margin:5px;
+}

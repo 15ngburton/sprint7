@@ -1,0 +1,57 @@
+<%inherit file="app_base.htm" />
+<%block name = "top_content">
+</%block>
+<%block name="content">
+  <table class = "table">
+    <tr>
+      <th>
+        Name
+      </th>
+      <th>
+        Category
+      </th>
+      <th>
+        Product Type
+      </th>
+      <th>
+        Price
+      </th>
+      <th>
+        Quantity
+      </th>
+      <th>
+        Options
+      </th>
+    </tr>
+
+    %for p in product_list:
+    <tr>
+      <td>
+        ${ p.name }
+      </td>
+      <td>
+        ${ p.category_id.name }
+      </td>
+      <td>
+        ${ p.__class__.__name__ }
+      </td>
+      <td>
+        $ ${ p.price }
+      </td>
+      <td>
+        %if hasattr(p, 'quantity'):
+          ${ p.quantity }
+        %else:
+          1
+        %endif
+      </td>
+      <td>
+        <a href = "createproduct/${ p.id }/">Edit</a>
+        <a href = "deleteproduct/${ p.id }/">Delete</a>
+      </td>
+    </tr>
+    %endfor
+
+  </table>
+  <a href = "createproduct"><button style = "btn btn-primary">Create</button></a>
+</%block>

@@ -1,0 +1,22 @@
+<%inherit file="app_base.htm" />
+
+  <%block name = "top_content">
+  </%block>
+
+<%block name="content">
+
+    <h2>Contact Us</h2><br>
+
+    <form action="/contact/" method="POST">
+
+        ${ csrf_input }
+
+        First name: <input type="text" name="fname"><br><br>
+        Last name: <input type="text" name = "lname"><br><br>
+        Message: <br><textarea rows="4" cols="50" name = "message"></textarea><br><br>
+
+        <input type="submit" value = "Submit" class = "btn">
+
+    </form>
+
+</%block>

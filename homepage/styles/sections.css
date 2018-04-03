@@ -1,0 +1,38 @@
+.maintainence-message{
+  background-color: red;
+  color:white;
+  height:50px;
+  text-align: center;
+}
+
+.topBar {
+    background-color: black;
+    color:white;
+    height:100px;
+
+}
+
+.sectionTop-content{
+    background-color: yellow;
+}
+
+.sectionLeftColumn{
+    background-color: green;
+    height:100vh;
+}
+
+.sectionCenterColumn{
+    background-color: blue;
+    height:100vh
+}
+
+.sectionRightColumn{
+    background-color: purple;
+    height:100vh
+}
+
+footer.sectionFoot {
+    background-color: brown;
+    color:white;
+    height:30px;
+}

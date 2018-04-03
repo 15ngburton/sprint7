@@ -1,0 +1,27 @@
+<%inherit file="app_base.htm" />
+<%block name = "top_content">
+</%block>
+<link rel="stylesheet" href="productpage.css">
+<%block name = "catContent">
+  <div class = "col-xs-8">
+    <div id = "pageContent">
+      <h1 class = "productName">${ product.name |h }</h1>
+      <p id = "this">${ product.description }</p>
+      <form>
+        %if hasattr(product, "quantity"):
+          <input type = "number" />
+        %endif
+        <button class = "btn btn-primary" type = "submit">Buy Now</btn>
+      </form>
+    </div>
+    <div id = "imgContent">
+      <img src = "${ STATIC_URL + product.image_url() }" class = "productImg" id = "largeImage" alt = "${ product.name } picture" />
+      <br>
+      <ul class = "thumbnailList">
+      %for imgURL in product.image_urls():
+          <li class = "imgItem"><img src = "${ STATIC_URL + imgURL }" class = "thumbnail" alt = "${ product.name } thumbNail" id = "thumbImg" /><li>
+      %endfor
+      </ul>
+    </div>
+  </div>
+</%block>

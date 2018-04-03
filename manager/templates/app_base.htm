@@ -1,0 +1,35 @@
+<%inherit file = "/homepage/templates/app_base.htm" />
+
+<%block name = "menu">
+    <ul class="navbar-nav">
+
+       <li class="nav-item ${ 'active' if request.dmp.page == 'index' else '' }">
+       <a class="nav-link " href="/homepage/index/">Home<span class="sr-only">(current)</span></a>
+       </li>
+
+       <li class="nav-item ${ 'active' if request.dmp.page == 'about' else '' }">
+       <a class="nav-link " href="/homepage/about/">About</a>
+       </li>
+
+       <li class="nav-item ${ 'active' if request.dmp.page == 'contact' else '' }">
+       <a class="nav-link" href="/homepage/contact/">Contact</a>
+       </li>
+
+       <li class="nav-item ${ 'active' if request.dmp.page == 'faq' else '' }">
+       <a class="nav-link disabled" href="/homepage/faq/">FAQ</a>
+       </li>
+
+       <li class="nav-item ${ 'active' if request.dmp.page == 'terms' else '' }">
+       <a class="nav-link disabled" href="/homepage/terms/">Terms</a>
+       </li>
+
+       <li class="nav-item ${ 'active' if request.dmp.page == 'sections' else '' }">
+       <a class="nav-link disabled" href="/homepage/sections/">Sections</a>
+       </li>
+
+       <li class="nav-item ${ 'active' if request.dmp.page == 'sections' else '' }">
+       <a class="nav-link disabled" href="/catalog/productlist/">Products</a>
+       </li>
+
+    </ul>
+</%block>

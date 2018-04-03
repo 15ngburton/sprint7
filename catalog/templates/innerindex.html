@@ -1,0 +1,11 @@
+<link rel="stylesheet" type="text/css" href="${ STATIC_URL }catalog/styles/innerindex.css">
+
+<ul class = "productList">
+  %for p in product_list:
+    <a id = "productTile" href = "/catalog/productpage/${ p.id }"><li class = "productItem">
+      <img src = "${ STATIC_URL + p.image_url() }" class = "productImg" >
+      <div class = "title"><b>${ p.name }<b></div>
+      <div class = "priceDiv">$${ p.price }</div>
+    </li></a>
+  %endfor
+</ul>
